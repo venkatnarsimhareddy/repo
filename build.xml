@@ -1,0 +1,12 @@
+<project name="Venkat">
+<echo message="hello" />
+<property file="./local.properties" />
+<property name="bing_value" location="${bing}" />
+<echo message="print the java location as ${bing_value}" />
+<target name="Hi">
+<echo message="how are you" />
+</target>
+<target name="dude" depends="Hi">
+<echo message="friend" />
+</target>
+</project>
